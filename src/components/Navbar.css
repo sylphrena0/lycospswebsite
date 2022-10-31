@@ -166,3 +166,44 @@
     transition: 250ms;
   }
 }
+
+.hamburger {
+  cursor: pointer; height: 48px; position: relative; transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s; user-select: none; width: 48px; outline: none;
+}
+.hamburger #a {
+  background: currentcolor; height: 3px; left: 8px; position: absolute; border-radius: 9em 0px 0px 9em; width: 16px; top: 13px; transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s; transform: none;
+}
+.hamburger #b {
+  background: currentcolor; height: 3px; left: 50%; position: absolute; border-radius: 0px 9em 9em 0px; width: 16px; top: 13px; transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s; transform: none;
+}
+.hamburger #c {
+  background: currentcolor; height: 3px; left: 8px; position: absolute; border-radius: 9em 0px 0px 9em; width: 16px; top: 23px; transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s; opacity: 1; transform: none;
+}
+.hamburger #d {
+  background: currentcolor; height: 3px; left: 50%; position: absolute; border-radius: 0px 9em 9em 0px; width: 16px; top: 23px; transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s; opacity: 1; transform: none;
+}
+.hamburger #e {
+  background: currentcolor; height: 3px; left: 8px; position: absolute; border-radius: 9em 0px 0px 9em; width: 16px; top: 33px; transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s; transform: none;
+}
+.hamburger #f {
+  background: currentcolor; height: 3px; left: 50%; position: absolute; border-radius: 0px 9em 9em 0px; width: 16px; top: 33px; transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s; transform: none;
+}
+
+.hamburger.active #a{
+  background: currentcolor; height: 3px; left: 8px; position: absolute; border-radius: 9em 0px 0px 9em; width: 16px; top: 13px; transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s; transform: translate(3.3936px, 5.1611px) rotate(45deg);
+}
+.hamburger.active #b{
+  background: currentcolor; height: 3px; left: 50%; position: absolute; border-radius: 0px 9em 9em 0px; width: 16px; top: 13px; transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s; transform: translate(-3.3936px, 5.1611px) rotate(-45deg);
+}
+.hamburger.active #c{
+  background: currentcolor; height: 3px; left: 8px; position: absolute; border-radius: 9em 0px 0px 9em; width: 16px; top: 23px; transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s; opacity: 0; transform: translate(-8.8375px);
+}
+.hamburger.active #d{
+  background: currentcolor; height: 3px; left: 50%; position: absolute; border-radius: 0px 9em 9em 0px; width: 16px; top: 23px; transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s; opacity: 0; transform: translate(8.8375px);
+}
+.hamburger.active #e{
+  background: currentcolor; height: 3px; left: 8px; position: absolute; border-radius: 9em 0px 0px 9em; width: 16px; top: 33px; transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s; transform: translate(3.3936px, -5.1611px) rotate(-45deg);
+}
+.hamburger.active #f{
+  background: currentcolor; height: 3px; left: 50%; position: absolute; border-radius: 0px 9em 9em 0px; width: 16px; top: 33px; transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s; transform: translate(-3.3936px, -5.1611px) rotate(45deg);
+}

@@ -16,12 +16,12 @@ const MembersData = () => {
     <div>
       <div id="main-content">
         <h2 id="sigmatitle" >Sigma Pi Sigma Honor Society Members</h2>
-        <table class="”sortable”" id="striped">
+        <table className="”sortable”" id="striped">
           <thead>
             <tr>
               <th>Name</th>
               <th>Member Number</th>
-              <th class="sorttable_nosort">Position</th>
+              <th className="sorttable_nosort">Position</th>
               <th>Date of Induction</th>
             </tr>
           </thead>

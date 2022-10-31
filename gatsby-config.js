@@ -1,10 +1,11 @@
 module.exports = {
+  pathPrefix: `orgs/sps`,
   siteMetadata: {
     title: `SPS Lycoming`,
     description: `Website for the Lycoming College Chapter of the Society of Physics Students`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `http://lycostu.lycoming.edu/orgs/sps/`
   },
-  plugins: ["gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
+  plugins: ["gatsby-plugin-react-helmet", "gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
     options: {
       "name": "images",
