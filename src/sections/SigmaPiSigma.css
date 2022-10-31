@@ -1,0 +1,80 @@
+:root {
+  --primary: #333333;
+  --secondary: #444444;
+  --bubble: #333333;
+  --textColor: white;
+}
+
+table {
+  border-collapse: separate;
+  /*Allows disabling those annoying white borders on tables*/
+  border-spacing: 0px;
+  width: 100%;
+}
+
+
+table#striped tbody tr:nth-child(2n) td {
+  /*I used a ID here because the sorting script I enabled requires the <thead> tag, which fucks up table selections*/
+  background: var(--primary);
+  /*Change the varable above, not the value*/
+}
+
+table#striped tbody tr:nth-child(2n+1) td {
+  background: var(--secondary);
+  /*Change the varable above, not the value*/
+}
+
+table#striped th {
+  background: #222222;
+  /*Table header color*/
+  color: white;
+}
+
+
+table,
+tr,
+td {
+  border: none;
+  text-align: center;
+}
+
+table {
+  block-size: 7560px;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  display: table;
+  font-family: \"Helvetica Neue\", Helvetica, Roboto, Arial, sans-serif;
+  margin: 0 auto;
+  inline-size: 100%;
+}
+
+table > tbody > * > td:first-child {
+  text-align: left;
+  padding-left: 15px;
+}
+
+
+#sigmatitle {
+  font-size: 2.25rem;
+  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+#main-content {
+  max-width: 55%;
+  margin: 5% auto;
+}
+
+@media screen and (max-width: 730px) {
+  #sigmatitle {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  #main-content {
+    max-width: 90%;
+  }
+}

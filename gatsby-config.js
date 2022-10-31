@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `sps-gatsby`,
+    title: `SPS Lycoming`,
+    description: `Website for the Lycoming College Chapter of the Society of Physics Students`,
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: ["gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
@@ -11,11 +12,23 @@ module.exports = {
     },
     __key: "images"
   }, {
-    resolve: 'gatsby-source-filesystem',
+    resolve: 'gatsby-plugin-manifest',
     options: {
-      "name": "pages",
-      "path": "./src/pages/"
-    },
-    __key: "pages"
+      "icon": "src/images/icon.png"
+    }
+  // }
+  // ,{
+  //   resolve: 'gatsby-source-filesystem',
+  //   options: {
+  //     "name": "pages",
+  //     "path": "./src/pages/"
+  //   },
+  //   __key: "pages"
+  // },{
+  //   resolve: 'gatsby-source-google-spreadsheets',
+  //   options: {
+  //     spreadsheetId: '1m7azxjBw7gxAm1IslglFinV12cKM9ZxaPsKGc-HWCZg',
+  //     apiKey: 'AIzaSyDnefxhPO8UsEL8ZX4W75N4CrmPjLiwR70'
+  //   }
   }]
 };
