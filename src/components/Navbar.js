@@ -29,7 +29,7 @@ class Navbar extends Component {
       <>
         <nav className='navbar'>
           <div className='navbar-container'>
-            <Link to='/index.html' className='navbar-logo'>
+            <Link to='/' className='navbar-logo'>
               LYCO SPS 
               <img src={icon} alt="SPS Lycoming Logo" className="icon"/>
             </Link>
