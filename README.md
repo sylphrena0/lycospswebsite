@@ -11,7 +11,7 @@ Author: [Sylphrena Kleinsasser](https://github.com/sylphrena0)
 
 ## **Project Overview:**
 
-This repository contains the source code for the Lycoming SPS Chapter Website. The website is build with React and Gatbsy. To update the website, you will need to clone the repository, install requisite packages, update the code, and deploy a build.
+This repository contains the source code for the Lycoming SPS Chapter Website. The website is built with React and Gatbsy. To update the website, you will need to clone the repository, install requisite packages, update the code, and deploy a build.
 
 Note that the website is optimized for non-experienced webmasyers. Most content is pulled from the SPS Google Drive, so you should not need to update the website more than once a year, unless someone on the executive board is replaced, or if you wish to make design changes or improvements.
 
@@ -131,3 +131,13 @@ Section will be added at a later point.
 ## **Project Structure:**
 
 Section will be added at a later point.
+
+## **Acknowledgments**
+
+This project used templates as a starting point of some pages. It also uses various services and libraries which will not be noted here, as they are meant for reuse and mentioned in the project overview. 
+
+The Home Page and Footer was based off of a tutorial by Brian Codex and the template used is from [this repository](https://github.com/briancodex/react-website-v1). Note that the Executive Board Cards were ported from the previous version of this website and the orginal source is unknown, though they were modified and adapted for react.
+
+The Contact Page was adapted from [this template](https://colorlib.com/wp/template/colorlib-regform-23/) and will be replaced with a more mobile friendly option, time permitting.
+
+The Sigma Pi Sigma, Colloqium, Photos, and History pages were written by [Sylphrena Kleinsasser](https://github.com/sylphrena0), some of which use external libararies and embeds.
