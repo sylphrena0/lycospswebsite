@@ -17,19 +17,5 @@ module.exports = {
     options: {
       "icon": "src/images/icon.png"
     }
-  // }
-  // ,{
-  //   resolve: 'gatsby-source-filesystem',
-  //   options: {
-  //     "name": "pages",
-  //     "path": "./src/pages/"
-  //   },
-  //   __key: "pages"
-  // },{
-  //   resolve: 'gatsby-source-google-spreadsheets',
-  //   options: {
-  //     spreadsheetId: '1m7azxjBw7gxAm1IslglFinV12cKM9ZxaPsKGc-HWCZg',
-  //     apiKey: 'AIzaSyDnefxhPO8UsEL8ZX4W75N4CrmPjLiwR70'
-  //   }
   }]
 };
