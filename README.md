@@ -132,12 +132,10 @@ Section will be added at a later point.
 
 Section will be added at a later point.
 
-## **Acknowledgments**
+## **Acknowledgments:**
 
 This project used templates as a starting point of some pages. It also uses various services and libraries which will not be noted here, as they are meant for reuse and mentioned in the project overview. 
 
-The Home Page and Footer was based off of a tutorial by Brian Codex and the template used is from [this repository](https://github.com/briancodex/react-website-v1). Note that the Executive Board Cards were ported from the previous version of this website and the orginal source is unknown, though they were modified and adapted for react.
+The Home Page and Footer was based off on [a template by Brian Codex](https://github.com/briancodex/react-website-v1). Note that the Executive Board Cards were ported from the previous version of this website and the orginal source is unknown, though they were modified and adapted for react.
 
-The Contact Page was adapted from [this template](https://colorlib.com/wp/template/colorlib-regform-23/) and will be replaced with a more mobile friendly option, time permitting.
-
-The Sigma Pi Sigma, Colloqium, Photos, and History pages were written by [Sylphrena Kleinsasser](https://github.com/sylphrena0), some of which use external libararies and embeds.
+The Contact Page was adapted from [this template](https://colorlib.com/wp/template/colorlib-regform-23/) and will be replaced with a more mobile friendly option, time permitting. The Sigma Pi Sigma, Colloqium, Photos, and History pages were written by [Sylphrena Kleinsasser](https://github.com/sylphrena0), some of which use external libararies and embeds.
