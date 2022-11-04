@@ -120,6 +120,10 @@ NOTE: These instructions assume you are using Linux (if you can, you should) or 
     Gatsby should create [/public/](/public/), which you should copy onto the Lycoming Site directory, overwriting any conflicts. 
       - Note: don't delete the content in the drive and copy the new files. The live version contains backups from before our migration to React, photos used by the History embed, and a copy of [/static/SigmaPiSigmaFetch.js](/static/SigmaPiSigmaFetch.js) in [/public/sigmapisigma/](/public/sigmapisigma/), which fixes an error in the build.
 
+    The updates should display on the website. You can refresh the site without caching by refreshing your browser with `Ctrl + Shift + R`. 
+    
+    Push any updates to GitHub for future webmasters. VsCode has build-in git support, just open the source control tab with`Ctrl + Shift + G`, enter your commit message, hit commit, then sync to send your updates to GitHub. Ensure you never comitt your credentials to this repository, as it is public.
+
 ## **Detailed Project Overview:**
 
 Section will be added at a later point.
