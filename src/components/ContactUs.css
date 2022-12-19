@@ -77,9 +77,11 @@ textarea {
   margin-bottom: 12px;
 }
 
-p {
+form > p {
   text-align: center;
-  padding: 0 10px;
+}
+
+p {
   margin-bottom: 55px;
   line-height: 1.8;
 }
