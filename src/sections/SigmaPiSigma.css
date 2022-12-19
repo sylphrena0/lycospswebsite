@@ -55,6 +55,10 @@ table > tbody > * > td:first-child {
   padding-left: 15px;
 }
 
+table > tbody > tr:first-child{
+  height: 0 !important;
+}
+
 
 #sigmatitle {
   font-size: 2.25rem;
@@ -64,7 +68,7 @@ table > tbody > * > td:first-child {
   color: white;
 }
 
-#main-content {
+.main-content {
   max-width: 55%;
   margin: 5% auto;
 }
@@ -76,7 +80,7 @@ table > tbody > * > td:first-child {
 }
 
 @media screen and (max-width: 1500px) {
-  #main-content {
+  .main-content {
     max-width: 90%;
   }
 }

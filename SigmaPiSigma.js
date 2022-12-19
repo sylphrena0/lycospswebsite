@@ -14,7 +14,7 @@ const MembersData = () => {
   const members = Array.from(data);
   return (
     <div>
-      <div id="main-content">
+      <div class="main-content">
         <h2 id="sigmatitle" >Sigma Pi Sigma Honor Society Members</h2>
         <table className="”sortable”" id="striped">
           <thead>
