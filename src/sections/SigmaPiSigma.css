@@ -30,6 +30,9 @@ table#striped th {
   color: white;
 }
 
+tr { /*height of rows*/
+  height: 45px;
+}
 
 table,
 tr,
@@ -39,7 +42,6 @@ td {
 }
 
 table {
-  block-size: 7560px;
   box-sizing: border-box;
   color: rgb(255, 255, 255);
   display: table;
