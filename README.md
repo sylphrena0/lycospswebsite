@@ -13,7 +13,7 @@ Author: [Sylphrena Kleinsasser](https://github.com/sylphrena0)
 
 This repository contains the source code for the Lycoming SPS Chapter Website. The website is built with React and Gatbsy. To update the website, you will need to clone the repository, install requisite packages, update the code, and deploy a build.
 
-Note that the website is optimized for non-experienced webmasyers. Most content is pulled from the SPS Google Drive, so you should not need to update the website more than once a year, unless someone on the executive board is replaced, or if you wish to make design changes or improvements.
+Note that the website is optimized for non-experienced webmasters. Most content is pulled from the SPS Google Drive, so you should not need to update the website more than once a year, unless someone on the executive board is replaced, or if you wish to make design changes or improvements.
 
 To update the content on the drive, login with the credentials provided by the previous executive board and navigate [here](https://drive.google.com/drive/u/1/folders/1D4Q25XZxy-GI1az26JrxDCQg3QSskk3K). Once you finish your responsibilites for the year, you should make a copy of all the documents to archive in the `Archived` subfolder. This is a tradition from well before my time as webmaster. 
 
