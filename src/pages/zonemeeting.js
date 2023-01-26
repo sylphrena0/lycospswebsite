@@ -1,6 +1,5 @@
 import React from 'react';
 import '../App.css';
-import ZoneItinerary from '../sections/ZoneItinerary';
 import ZoneMeeting from '../sections/ZoneMeeting';
 import ZoneMap from '../sections/ZoneMap';
 import ZoneHousing from '../sections/ZoneHousing';
@@ -16,7 +15,6 @@ function Home() {
       <Navbar/>
       <Stars />
       <ZoneMeeting />
-      {/* <ZoneItinerary /> */}
       <ZoneMap />
       <ZoneHousing />
       <Footer />
