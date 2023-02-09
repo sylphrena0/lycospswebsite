@@ -10,7 +10,7 @@ function MembersData() {
             <Helmet>
                 <script src={'SigmaPiSigmaStaticFetch.js'} />
             </Helmet>
-        <div class="main-content">
+        <div class="main-content main-content-table">
           <h2 id="sigmatitle" >Sigma Pi Sigma Honor Society Members</h2>
           <table class="”sortable”" id="striped">
             <thead>

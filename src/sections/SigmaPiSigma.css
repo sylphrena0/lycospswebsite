@@ -84,3 +84,17 @@ table > tbody > tr:first-child{
     max-width: 90%;
   }
 }
+
+@media screen and (max-width: 450px) {
+  .main-content-table {
+    max-width: 100%;
+  }
+  span, p, h2 {
+    padding: 0 5% !important;
+    box-decoration-break: clone;
+
+  }
+  .table {
+    font-size: small;
+  }
+}
