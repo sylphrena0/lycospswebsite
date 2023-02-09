@@ -16,7 +16,6 @@ function ZoneMeeting() {
                 <th>Time</th>
                 <th class="sorttable_nosort">Event</th>
                 <th>Location</th>
-                <th>Notes</th>
               </tr>
             </thead>
             <tbody class="output">
@@ -26,92 +25,79 @@ function ZoneMeeting() {
               <td>Friday</td>
               <td>7:00pm-7:30pm</td>
               <td>Registration</td>
-              <td>Academic Center</td>
-              <td></td>
+              <td>Academic Center Lobby</td>
             </tr>
             <tr>
               <td>Friday</td>
               <td>7:30pm-9:00pm</td>
               <td>Game Night</td>
-              <td>Snowden Library</td>
-              <td></td>
+              <td>Academic Center Lobby</td>
             </tr>
             <tr>
               <td>Saturday</td>
               <td>9:00am-10:00am</td>
               <td>Registration & Breakfast</td>
-              <td>TBD</td>
-              <td></td>
+              <td>Academic Center Lobby</td>
             </tr>
             <tr>
               <td>Saturday</td>
               <td>10:00am-10:30am</td>
               <td>Opening/History of SPS</td>
-              <td>TBD</td>
-              <td></td>
+              <td>Heim G-11</td>
             </tr>
             <tr>
               <td>Saturday</td>
               <td>10:30am-11:30am</td>
               <td>Plenary Speaker: <a href="https://umdphysics.umd.edu/people/faculty/current/item/167-gatess.html"> Dr. Jim Gates</a></td>
-              <td>TBD</td>
-              <td></td>
+              <td>Heim G-11</td>
             </tr>
             <tr>
               <td>Saturday</td>
               <td>11:30am-12:30pm</td>
               <td>Lunch</td>
-              <td>TBD</td>
-              <td></td>
+              <td>Academic Center Lobby</td>
             </tr>
             <tr>
               <td>Saturday</td>
               <td>12:30pm-1:30pm</td>
               <td>Workshop</td>
-              <td>TBD</td>
-              <td></td>
+              <td>Lynn Classrooms</td>
             </tr>
             <tr>
               <td>Saturday</td>
               <td>1:30pm-2:30pm</td>
               <td>Talk with the Scientists Panel</td>
-              <td>TBD</td>
-              <td></td>
+              <td>Heim G-09</td>
             </tr>
             <tr>
               <td>Saturday</td>
               <td>2:30pm-3:00pm</td>
               <td>Coffee Break</td>
-              <td>TBD</td>
-              <td></td>
+              <td>Heim Lobby</td>
             </tr>
             <tr>
               <td>Saturday</td>
               <td>3:00pm-4:00pm</td>
               <td>Research Talks</td>
-              <td>TBD</td>
-              <td></td>
+              <td>Heim G-09</td>
             </tr>
             <tr>
               <td>Saturday</td>
               <td>4:00pm-5:00pm</td>
               <td>Poster Sessions</td>
               <td>Heim Lobby</td>
-              <td></td>
             </tr>
             <tr>
               <td>Saturday</td>
               <td>5:00pm-6:00pm</td>
               <td>Dinner</td>
-              <td>TBD</td>
-              <td></td>
+              <td>Academic Center Lobby</td>
             </tr>
             <tr>
               <td>Saturday</td>
               <td>6:00pm-7:00pm</td>
               <td>Planetarium Show</td>
               <td>Detwiler Planetarium</td>
-              <td></td>
             </tr>
             </tbody>
             <tfoot></tfoot></table>
