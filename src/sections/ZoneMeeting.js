@@ -3,9 +3,9 @@ import React from "react";
 function ZoneMeeting() {
     return (
       <div>
-        <div class="main-content">
+        <div class="main-content main-content-table">
           <h2 class="header">SPS Zone 3 Meeting at Lycoming College</h2>
-          <span id="top-span">SPS Lycoming is delighted to host the 2022-23 SPS Zone 3 Meeting and we are looking forward to hosting your chapters! The meeting will be held on Saturday, February 25th, from 8:00am to 9:00pm. We encourage folks to arrive Friday, February 24th to settle in and enjoy light refreshments and a fun activity. There is no registration fee. Please visit <a href="https://forms.office.com/r/arHBSddDNb">this link</a> to RSVP, we ask that all attendees RSVP by February 1st, 2023.</span>
+          <span id="top-span">SPS Lycoming is delighted to host the 2022-23 SPS Zone 3 Meeting and we are looking forward to hosting your chapters! The meeting will be held on Saturday, February 25th, from 8:00am to 9:00pm. We encourage folks to arrive Friday, February 24th to settle in and enjoy light refreshments and a fun activity. There is no registration fee. Please visit <a href="https://forms.office.com/r/arHBSddDNb">this link</a> to RSVP, we ask that all attendees RSVP by February 1st, 2023. <b>Late registrations will be accepted until February 18th, 2023.</b></span>
 
           <span>We've included directions to Lycoming College below, along with a campus map and housing information. Our tentative itinerary is listed below and will be finalized before the registration deadline. If you have any questions about the meeting or logistics, please email the Lycoming SPS Executive Board at <a href="mailto:sps@lycoming.edu?subject=SPS Zone Meeting">sps@lycoming.edu.</a></span>
 
@@ -66,7 +66,7 @@ function ZoneMeeting() {
             <tr>
               <td>Saturday</td>
               <td>1:30pm-2:30pm</td>
-              <td>Talk with the Scientists Panel</td>
+              <td>Career Scientists Panel</td>
               <td>Heim G-09</td>
             </tr>
             <tr>
