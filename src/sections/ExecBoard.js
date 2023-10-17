@@ -20,18 +20,18 @@ function ExecBoard() {
         <ExecItem
             imgsrc={president}
             name='Kaitlyn Sheriff'
-            pos='President'
+            pos='President / Z3 AZC'
           />
         <ExecItem
             imgsrc={vicepresident}
-            name='Amber Elinsky'
+            name='Sarah Loucks'
             pos='Vice President'
           />
         <ExecItem
-            imgsrc={treasurer}
-            name='Priktish Suntoo'
-            pos='Treasurer'
-          /> 
+            imgsrc={webmaster}
+            name='Thane Goetz'
+            pos='Webmaster'
+          />
         <ExecItem
             imgsrc={advisor}
             name='Mrs. Melissa Kiehl'
@@ -42,24 +42,25 @@ function ExecBoard() {
         
         <ExecItem
             imgsrc={secretary}
-            name='Holland McVey'
+            name='Adrianna Campisi'
             pos='Secretary'
           />
         <ExecItem
+            imgsrc={treasurer}
+            name='Matthew Motuz'
+            pos='Treasurer'
+          /> 
+          <ExecItem
             imgsrc={publicrelations}
-            name='Soojay Jhugaroo'
+            name='Izzy Jackson'
             pos='Public Relations'
           />
-        <ExecItem
+          <ExecItem
             imgsrc={eventcoordinator}
-            name='Zoie Dodson'
+            name='Colt Walker'
             pos='Event Coordinator'
           />
-        <ExecItem
-            imgsrc={webmaster}
-            name='Sylphrena Kleinsasser'
-            pos='Webmaster / Z3 AZC'
-          />
+          
 
       </div>
     </div>
