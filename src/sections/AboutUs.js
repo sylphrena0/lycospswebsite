@@ -24,7 +24,7 @@ function Cards() {
               src={sigmapisigma}
               text='Sigma Pi Sigma is the Physics and Astronomy Honor Society. It exists to honor outstanding scholarship in physics and astronomy, to encourage interest in physics among students at all levels, to promote service of its members towards their peers, colleagues, and the public, and to provide a fellowship of persons who have excelled in physics.'
               label='ΣΠΣ Induction 2021'
-              path='/sigma-pi-sigma'
+              path='/sigmapisigma'
             />
           </ul>
           <ul className='cards__items'>
