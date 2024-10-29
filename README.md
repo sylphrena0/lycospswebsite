@@ -15,7 +15,7 @@ This repository contains the source code for the Lycoming SPS Chapter Website. T
 
 Note that the website is optimized for non-experienced webmasters. Most content is pulled from the SPS Google Drive, so you should not need to update the website more than once a year, unless someone on the executive board is replaced, or if you wish to make design changes or improvements.
 
-To update the content on the drive, login with the credentials provided by the previous executive board and navigate [here](https://drive.google.com/drive/u/1/folders/1D4Q25XZxy-GI1az26JrxDCQg3QSskk3K). Once you finish your responsibilites for the year, you should make a copy of all the documents to archive in the `Archived` subfolder. This is a tradition from well before my time as webmaster. 
+To update the content on the drive, login with the credentials provided by the previous executive board and navigate [here](https://drive.google.com/drive/u/1/folders/1D4Q25XZxy-GI1az26JrxDCQg3QSskk3K). Once you finish your responsibilities for the year, you should make a copy of all the documents to archive in the `Archived` subfolder. This is a tradition from well before my time as webmaster. 
 
 ## **Development Instructions:**
 
@@ -51,7 +51,7 @@ NOTE: These instructions assume you are using Linux (if you can, you should) or 
 
 1. **Test Website**
   
-    You should see the website files populated in the directory you specifed. Open the directory in your favorite code editor (I recommend [Visual Studio Code](https://code.visualstudio.com/) and will assume you are using it.).
+    You should see the website files populated in the directory you specified. Open the directory in your favorite code editor (I recommend [Visual Studio Code](https://code.visualstudio.com/) and will assume you are using it.).
 
     Open the integrated terminal in VsCode with `Ctrl + J`. Execute this command:
     ```bash
