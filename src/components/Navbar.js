@@ -26,7 +26,7 @@ class Navbar extends Component {
     const hamburgerClass = `hamburger ${this.state.active}`;
     const navmenuClass = `nav-menu ${this.state.active}`;
     return (
-      <>
+    
         <nav className='navbar'>
           <div className='navbar-container'>
             <Link to='/' className='navbar-logo'>
@@ -72,7 +72,7 @@ class Navbar extends Component {
             </ul>
           </div>
         </nav>
-      </>
+    
     );
   };
 };

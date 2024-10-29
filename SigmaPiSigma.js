@@ -26,7 +26,7 @@ const MembersData = () => {
             </tr>
           </thead>
           <tbody>{members.map((data) => (
-            <tr>
+            <tr key={data.number}>
               <td>{data.name}</td>
               <td>{data.number}</td>
               <td>{data.position}</td>

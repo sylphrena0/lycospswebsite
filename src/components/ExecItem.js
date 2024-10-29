@@ -2,7 +2,6 @@ import React from 'react';
 
 function ExecItem(props) {
   return (
-    <>
         <div class="card-user-container">
           <div class="card-user-avatar">
             <img src={props.imgsrc} alt={props.name} class="user-image" width="200"/>
@@ -12,7 +11,6 @@ function ExecItem(props) {
             <p class="role">{props.pos}</p>
           </div>
         </div>
-    </>
   );
 }
 
