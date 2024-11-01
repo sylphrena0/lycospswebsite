@@ -16,12 +16,12 @@ table {
 table#striped tbody tr:nth-child(2n) td {
   /*I used a ID here because the sorting script I enabled requires the <thead> tag, which fucks up table selections*/
   background: var(--primary);
-  /*Change the varable above, not the value*/
+  /*Change the variable above, not the value*/
 }
 
 table#striped tbody tr:nth-child(2n+1) td {
   background: var(--secondary);
-  /*Change the varable above, not the value*/
+  /*Change the variable above, not the value*/
 }
 
 table#striped th {
@@ -30,7 +30,8 @@ table#striped th {
   color: white;
 }
 
-tr { /*height of rows*/
+tr {
+  /*height of rows*/
   height: 45px;
 }
 
@@ -50,15 +51,10 @@ table {
   inline-size: 100%;
 }
 
-table > tbody > * > td:first-child {
+table>tbody>*>td:first-child {
   text-align: left;
   padding-left: 15px;
 }
-
-table > tbody > tr:first-child{
-  height: 0 !important;
-}
-
 
 #sigmatitle {
   font-size: 2.25rem;
@@ -89,11 +85,15 @@ table > tbody > tr:first-child{
   .main-content-table {
     max-width: 100%;
   }
-  span, p, h2 {
+
+  span,
+  p,
+  h2 {
     padding: 0 5% !important;
     box-decoration-break: clone;
 
   }
+
   .table {
     font-size: small;
   }

@@ -1,4 +1,5 @@
 import path from 'path';
+import credentials from './google-sheets-worker-credentials.json';
 // Get paths of Gatsby's required rules, which as of writing is located at:
 // https://github.com/gatsbyjs/gatsby/tree/fbfe3f63dec23d279a27b54b4057dd611dce74bb/packages/
 // gatsby/src/utils/eslint-rules
@@ -44,5 +45,14 @@ module.exports = {
       options: {
         'icon': 'src/images/icon.png',
       },
-    }],
+    },
+    {
+      resolve: 'gatsby-source-google-spreadsheets',
+      options: {
+        spreadsheetId: '1m7azxjBw7gxAm1IslglFinV12cKM9ZxaPsKGc-HWCZg',
+        credentials: credentials,
+        worksheetTitle: 'members',
+      },
+    },
+  ],
 };
