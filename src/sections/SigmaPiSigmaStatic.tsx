@@ -1,31 +1,31 @@
-import React from "react";
+import React from 'react';
 // import Papa from "papaparse";
+import { Helmet } from 'react-helmet';
 import './SigmaPiSigma.css';
-import {Helmet} from "react-helmet";
 
 function MembersData() {
   return (
 
       <div>
             <Helmet>
-                <script src={'SigmaPiSigmaStaticFetch.js'} />
+                <script src={'SigmaPiSigmaStaticFetch.ts'} />
             </Helmet>
-        <div class="main-content main-content-table">
+        <div className="main-content main-content-table">
           <h2 id="sigmatitle" >Sigma Pi Sigma Honor Society Members</h2>
-          <table class="”sortable”" id="striped">
+          <table className="”sortable”" id="striped">
             <thead>
               <tr>
                 <th>Name</th>
                 <th>Member Number</th>
-                <th class="sorttable_nosort">Position</th>
+                <th className="sorttable_nosort">Position</th>
                 <th>Date of Induction</th>
               </tr>
             </thead>
-            <tbody class="output">
+            <tbody className="output">
             </tbody>
             <tfoot></tfoot></table>
         </div>
-        {/* <script src="static/SigmaPiSigmaStaticFetch.js" /> */}
+        {/* <script src="static/SigmaPiSigmaStaticFetch.ts" /> */}
       </div>
   );
 }

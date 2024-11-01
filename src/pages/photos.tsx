@@ -1,11 +1,11 @@
 import React from 'react';
 import '../App.css';
-import Photos from '../sections/Photos';
-import Footer from '../sections/Footer.js';
-import Stars from '../sections/Stars.js';
 import Navbar from '../components/Navbar';
+import Footer from '../sections/Footer';
+import Photos from '../sections/Photos';
+import Stars from '../sections/Stars';
 
-export const Head = () => <title>Lycoming SPS - Photos</title>
+export const Head = () => <title>Lycoming SPS - Photos</title>;
 
 export default function Colloquium() {
     return (

@@ -2,10 +2,10 @@
 function init() {
     function processRows(json) {
         json.forEach((row) => {
-    
+
             const tr = document.createElement('tr');
             const keys = Object.keys(row);
-        
+
             keys.forEach((key) => {
                 const td = document.createElement('td');
                 td.textContent = row[key];

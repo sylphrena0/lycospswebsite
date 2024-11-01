@@ -1,13 +1,13 @@
 import React from 'react';
 import '../App.css';
-import AboutUs from '../sections/AboutUs';
-import HomeHeader from '../sections/HomeHeader';
-import ExecBoard from '../sections/ExecBoard';
-import Footer from '../sections/Footer.js';
-import Stars from '../sections/Stars.js';
 import Navbar from '../components/Navbar';
+import AboutUs from '../sections/AboutUs';
+import ExecBoard from '../sections/ExecBoard';
+import Footer from '../sections/Footer';
+import HomeHeader from '../sections/HomeHeader';
+import Stars from '../sections/Stars';
 
-export const Head = () => <title>Lycoming SPS - Home</title>
+export const Head = () => <title>Lycoming SPS - Home</title>;
 
 function Home() {
   return (

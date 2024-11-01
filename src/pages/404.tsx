@@ -1,17 +1,17 @@
-import React from 'react'
+import React from 'react';
 import './404.css';
 
-export const Head = () => <title>Lycoming SPS - Page Not Found</title>
+export const Head = () => <title>Lycoming SPS - Page Not Found</title>;
 
 const PageNotFound = () => {
     return ( //replace with custom spherical cow when possible
-        <body class="nf">
+        <body className="nf">
         {/* <div id="hero-star">
             <div id='stars'></div>
             <div id='stars2'></div>
             <div id='stars3'></div>
         </div> */}
-            <div class="nf-div" id="nf-rocket">
+            <div className="nf-div" id="nf-rocket">
                 <svg width="1123" height="837" viewBox="0 0 1123 837" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect width="1123" height="837" fill="black"/>
                     <g id="sky" filter="url(#filter0_d)">
@@ -101,14 +101,14 @@ const PageNotFound = () => {
                     </defs>
                     </svg>
             </div>
-            <div class="text">
-                <h1 class="cursive">Error 404</h1>  
+            <div className="text">
+                <h1 className="cursive">Error 404</h1>  
                 <h2>Couldn't launch :/</h2>
                 <h3 id="spacebtn">Page Not Found - lets take you <a href="/">back!</a></h3> 
             </div>
         </body>
 
-    )
-}
+    );
+};
 
-export default PageNotFound
+export default PageNotFound;
