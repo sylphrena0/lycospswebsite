@@ -1,14 +1,18 @@
+@use 'sass:math';
+@use 'sass:string';
+
 //n is number of stars required
 @function multiple-box-shadow ($n) {
   //adjust stars width and height:
   $width: 2300;
   $height: 7000;
-  $value: '#{random($width)}px #{random($height)}px #FFF';
+  $value: '#{math.random($width)}px #{math.random($height)}px #FFF';
+
   @for $i from 2 through $n {
-    $value: '#{$value} , #{random($width)}px #{random($height)}px #FFF';
+    $value: '#{$value} , #{math.random($width)}px #{math.random($height)}px #FFF';
   }
 
-  @return unquote($value);
+  @return string.unquote($value);
 }
 
 //adjust number of stars:
@@ -17,16 +21,17 @@ $shadows-medium: multiple-box-shadow(700);
 $shadows-big: multiple-box-shadow(200);
 
 html {
-    background: radial-gradient(ellipse at bottom, #48187d 0%, #080211 95%);
+  background: radial-gradient(ellipse at bottom, #48187d 0%, #080211 95%);
 }
 
 #hero-star {
-    overflow: hidden;
-    height: 95%;
-    width: 100%;
-    position: absolute;
-    z-index: -1;
+  overflow: hidden;
+  height: 95%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
 }
+
 #stars {
   width: 1px;
   height: 1px;
@@ -44,6 +49,7 @@ html {
     box-shadow: $shadows-small;
   }
 }
+
 #stars2 {
   width: 2px;
   height: 2px;
@@ -61,6 +67,7 @@ html {
     box-shadow: $shadows-medium;
   }
 }
+
 #stars3 {
   width: 3px;
   height: 3px;
@@ -84,11 +91,15 @@ html {
     -webkit-text-fill-color: transparent;
   }
 }
+
 @keyframes animStar {
   from {
     transform: translateY(0px);
   }
+
   to {
     transform: translateY(-2000px);
   }
-};
+}
+
+;
