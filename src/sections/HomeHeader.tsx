@@ -1,3 +1,5 @@
+import '@fontsource/permanent-marker';
+import { Typography } from '@mui/material';
 import React from 'react';
 import '../App.css';
 import './HomeHeader.css';
@@ -5,10 +7,11 @@ import './HomeHeader.css';
 function HomeHeader() {
   return (
     <div className='hero-container'>
-      {/* <video src='/videos/video-1.mp4' autoPlay loop muted /> */}
-      <h1 className="cursive">PHYSICS AWAITS</h1>
+      <Typography variant="h1" sx={{ fontFamily: 'Permanent Marker, cursive', letterSpacing: 0 }}>
+        PHYSICS AWAITS
+      </Typography>
       <p>Lycoming College Society of Physics Students</p>
-    </div>
+    </div >
   );
 }
 

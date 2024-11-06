@@ -1,9 +1,12 @@
 import emailjs from '@emailjs/browser';
+import '@fontsource/permanent-marker';
+import SendIcon from '@mui/icons-material/Send';
+import { Box, Button, Container, Snackbar, TextField, Typography } from '@mui/material';
 import React, { useRef } from 'react';
-import './ContactUs.css';
 
 const EmailContactForm = () => {
   const form = useRef();
+  const [message, setMessage] = React.useState<string | undefined>(undefined);
 
   const sendEmail = (e) => {
     e.preventDefault(); // prevents the page from reloading when you hit “Send”
@@ -11,41 +14,83 @@ const EmailContactForm = () => {
     emailjs.sendForm('service_8321cqv', 'template_440uze4', form.current, '1afItGsg7LU_g73tM')
       .then((_result) => {
         const submit = document.getElementById('submit');
-        submit.innerText = 'Sent!';
-        submit.className = ' done';
+        setMessage('Message sent!');
         (submit as HTMLButtonElement).disabled = true;
       }, (_error) => {
         const submit = document.getElementById('submit');
-        submit.innerText = 'Error!';
+        setMessage('Failed to send message. Please try again or contact us directly at sps@lycoming.edu.');
         (submit as HTMLButtonElement).disabled = true;
       });
   };
 
   return (
-    <div className="wrapper">
-      <div className="inner">
-        <form ref={form} onSubmit={sendEmail}>
-          <h3 id="contact-us">Contact Us</h3>
-          <p>Send a message to the executive board of the Lycoming College Society of Physics Students:</p>
-          <label className="form-group">
-            <input type="text" name="from_name" className="contact-input form-control" required />
-            <label htmlFor="from_name">Your Name</label>
-            <span className="border"></span>
-          </label>
-          <label className="form-group">
-            <input type="text" name="reply_to" className="contact-input form-control" pattern="[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]*@[a-zA-Z0-9-]*(?:\.[a-zA-Z0-9-]+)*" title="Must be a valid email!" required />
-            <label htmlFor="reply_to">Your Email</label>
-            <span className="border"></span>
-          </label>
-          <label className="form-group" >
-            <textarea name="message" id="" className="contact-input form-control" required></textarea>
-            <label htmlFor="message">Your Message</label>
-            <span className="border"></span>
-          </label>
-          <button className="contact-input" type="submit" id="submit">Submit <i className="zmdi zmdi-arrow-right"></i></button>
-        </form>
-      </div>
-    </div>
+    <>
+      <Container
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          minHeight: '100vh',
+        }}>
+        <Box
+          sx={{
+            background: 'rgba(24, 26, 27, 0.75)',
+            padding: 3,
+            borderRadius: 2,
+            boxShadow: '0 0 20px rgba(0, 0, 0, 0.1)',
+          }}
+        >
+          <form ref={form} onSubmit={sendEmail}>
+            <Typography variant="h3" id="contact-us" color='textPrimary'>Contact Us</Typography>
+            <Typography variant="body1">Send a message to the executive board of the Lycoming College Society of Physics Students:</Typography>
+            <TextField
+              label="Your Name"
+              name="from_name"
+              fullWidth
+              margin="normal"
+              size='medium'
+              required
+            />
+            <TextField
+              label="Your Email"
+              name="reply_to"
+              fullWidth
+              margin="normal"
+              type="email"
+              required
+            />
+            <TextField
+              label="Your Message"
+              name="message"
+              fullWidth
+              margin="normal"
+              multiline
+              rows={4}
+              required
+            />
+            <Button
+              variant="contained"
+              color="primary"
+              type="submit"
+              size='large'
+              id="submit"
+              sx={{ marginTop: 2 }}
+              fullWidth
+              endIcon={<SendIcon />}
+            >
+              Submit
+            </Button>
+          </form>
+        </Box>
+      </Container>
+
+      <Snackbar
+        open={message !== undefined}
+        autoHideDuration={4000}
+        onClose={() => setMessage(undefined)}
+        message={message}
+      />
+    </>
   );
 };
 

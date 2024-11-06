@@ -7,6 +7,7 @@
 
 html {
   min-width: 330px;
-  min-height:100%;/* make sure it is at least as tall as the viewport */
-  position:relative;
+  min-height: 100%;
+  /* make sure it is at least as tall as the viewport */
+  position: relative;
 }

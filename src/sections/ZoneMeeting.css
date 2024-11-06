@@ -9,7 +9,7 @@
     padding: 1rem 0;
 }
 
-span {
+span#zone-meeting {
     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     color: white;
     font-size: 20px;
