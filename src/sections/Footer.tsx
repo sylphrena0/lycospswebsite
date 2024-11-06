@@ -35,16 +35,16 @@ function Footer() {
         <div className='footer-link-wrapper'>
           <div className='footer-link-items'>
             <h2>Related Links</h2>
-            <span className="nowrap">
+            <span>
               <a title="The American Institute of Physics" href='https://www.aip.org/'>AIP</a> / <a title="American Physical Society" href='https://www.aps.org/'>APS</a>
             </span>
-            <span className="nowrap">
+            <span>
               <a title="American Association for the Advancement of Science" href='https://www.aaas.org/'>AAAS</a> / <a title="American Astronomical Society" href='https://aas.org/'>AAS</a>
             </span>
-            <span className="nowrap">
+            <span>
               <a title="National Society of Black Physicists" href='https://www.spsnational.org/about/partnerships/nsbp'>NSBP</a> / <a title="National Society of Hispanic Physicists" href='https://www.spsnational.org/about/partnerships/nshp'>NSHP</a>
             </span>
-            <span className="nowrap">
+            <span>
               <a title="American Association of Physicists in Medicine" href='https://www.aapm.org/'>AAPM</a> / <a title="American Association of Physics Teachers" href='https://www.aapt.org/'>AAPT</a>
             </span>
           </div>

@@ -142,13 +142,11 @@
   margin-bottom: 16px;
 }
 
-.nowrap {
+.footer-link-items span {
   white-space: nowrap;
-}
-
-span.nowrap {
-  font-size: inherit;
-  margin-bottom: 0;
+  font-size: inherit !important;
+  margin-bottom: .5rem !important;
+  line-height: normal !important;
 }
 
 @media screen and (max-width: 820px) {
