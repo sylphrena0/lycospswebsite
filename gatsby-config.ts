@@ -47,6 +47,8 @@ module.exports = {
       },
     },
     {
+      // Create or download credentials from the google dev console:
+      // https://console.cloud.google.com/iam-admin/serviceaccounts/details/104682248545442458116;edit=true/keys?project=mindful-carport-366805
       resolve: 'gatsby-source-google-spreadsheets',
       options: {
         spreadsheetId: '1m7azxjBw7gxAm1IslglFinV12cKM9ZxaPsKGc-HWCZg',

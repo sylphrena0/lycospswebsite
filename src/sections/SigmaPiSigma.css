@@ -5,14 +5,6 @@
   --textColor: white;
 }
 
-table {
-  border-collapse: separate;
-  /*Allows disabling those annoying white borders on tables*/
-  border-spacing: 0px;
-  width: 100%;
-}
-
-
 table#striped tbody tr:nth-child(2n) td {
   /*I used a ID here because the sorting script I enabled requires the <thead> tag, which fucks up table selections*/
   background: var(--primary);
@@ -43,6 +35,9 @@ td {
 }
 
 table {
+  border-collapse: separate;
+  border-spacing: 0px;
+  width: 100%;
   box-sizing: border-box;
   color: rgb(255, 255, 255);
   display: table;
@@ -56,12 +51,17 @@ table>tbody>*>td:first-child {
   padding-left: 15px;
 }
 
-#sigmatitle {
+#members-title {
   font-size: 2.25rem;
   line-height: 1.4;
   margin-top: 0;
   margin-bottom: 0.5rem;
   color: white;
+}
+
+#members-update-failed {
+  margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 .main-content {
@@ -70,7 +70,7 @@ table>tbody>*>td:first-child {
 }
 
 @media screen and (max-width: 730px) {
-  #sigmatitle {
+  #members-title {
     font-size: 1.75rem;
   }
 }
