@@ -60,7 +60,8 @@ function Footer() {
       <section className='social-media'>
         <div className='social-media-wrap'>
 
-          <small className='website-rights'>SPS Lycoming © 2022-{new Date().getFullYear()}</small> {/* TODO: switch to in browser js */}
+          <small className='website-rights'>SPS Lycoming © 2022-{new Date().getFullYear()}</small>
+          <a href="https://github.com/sylphrena0/lycospswebsite" target="_blank" rel="noopener noreferrer">Source Code</a>
         </div>
       </section>
     </div>

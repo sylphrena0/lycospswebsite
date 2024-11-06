@@ -12,7 +12,7 @@ export const Head = () => <title>Lycoming SPS - Home</title>;
 function Home() {
   return (
     <>
-      <Navbar/>
+      <Navbar />
       <Stars />
       <HomeHeader />
       <AboutUs />

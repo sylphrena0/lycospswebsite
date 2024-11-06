@@ -12,7 +12,7 @@ export const Head = () => <title>Lycoming SPS - Zone 3 Meeting</title>;
 function Home() {
   return (
     <>
-      <Navbar/>
+      <Navbar />
       <Stars />
       <ZoneMeeting />
       <ZoneMap />

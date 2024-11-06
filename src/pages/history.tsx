@@ -10,7 +10,7 @@ export const Head = () => <title>Lycoming SPS - History</title>;
 function History() {
   return (
     <>
-      <Navbar/>
+      <Navbar />
       <Stars />
       <HistoryData />
       <Footer />

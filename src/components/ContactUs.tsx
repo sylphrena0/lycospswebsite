@@ -25,7 +25,7 @@ const EmailContactForm = () => {
     <div className="wrapper">
       <div className="inner">
         <form ref={form} onSubmit={sendEmail}>
-          <h3 id="contactus">Contact Us</h3>
+          <h3 id="contact-us">Contact Us</h3>
           <p>Send a message to the executive board of the Lycoming College Society of Physics Students:</p>
           <label className="form-group">
             <input type="text" name="from_name" className="contact-input form-control" required />
@@ -42,9 +42,7 @@ const EmailContactForm = () => {
             <label htmlFor="message">Your Message</label>
             <span className="border"></span>
           </label>
-          <button className="contact-input" type="submit" id="submit">Submit
-            <i className="zmdi zmdi-arrow-right"></i>
-          </button>
+          <button className="contact-input" type="submit" id="submit">Submit <i className="zmdi zmdi-arrow-right"></i></button>
         </form>
       </div>
     </div>

@@ -39,7 +39,6 @@
   border-radius: 2px;
   margin-right: 10px;
   outline: none;
-  border: none;
   font-size: 18px;
   margin-bottom: 16px;
   border: 1px solid #fff;
@@ -143,6 +142,15 @@
   margin-bottom: 16px;
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
+span.nowrap {
+  font-size: inherit;
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 820px) {
   .footer-links {
     padding-top: 2rem;
@@ -162,14 +170,5 @@
 
   .social-media-wrap {
     flex-direction: column;
-  }
-
-  .nowrap {
-    white-space: nowrap;
-  }
-
-  span.nowrap {
-    font-size: inherit;
-    margin-bottom: 0;
   }
 }

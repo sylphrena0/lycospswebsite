@@ -5,14 +5,14 @@
 }
 
 body {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat-Regular", sans-serif;
   color: #fff;
   font-size: 15px;
   margin: 0;
 }
 
 .contact-input {
-  font-family: "Montserrat-Regular";
+  font-family: "Montserrat-Regular", sans-serif;
   color: #fff;
   font-size: 15px;
 }
@@ -69,15 +69,15 @@ textarea {
   resize: none;
 }
 
-#contactus {
+#contact-us {
   text-transform: uppercase;
   font-size: 45px;
-  font-family: "Montserrat-Bold";
+  font-family: "Montserrat-Bold", sans-serif;
   text-align: center;
   margin-bottom: 12px;
 }
 
-form > p {
+form>p {
   text-align: center;
 }
 
@@ -122,7 +122,7 @@ p {
   height: 43px;
   font-size: 15px;
   background: none;
-  font-family: "Montserrat-SemiBold";
+  font-family: "Montserrat-SemiBold", sans-serif;
 }
 
 .form-control:focus,
@@ -146,7 +146,6 @@ textarea.form-control {
 }
 
 button {
-  border: none;
   width: 162px;
   height: 51px;
   border: 2px solid #fff;
@@ -160,7 +159,7 @@ button {
   background: none;
   color: #fff;
   text-transform: uppercase;
-  font-family: "Montserrat-SemiBold";
+  font-family: "Montserrat-SemiBold", sans-serif;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   position: relative;
@@ -221,7 +220,7 @@ button.done i {
 }
 
 @media (max-width: 767px) {
-  #contactus {
+  #contact-us {
     font-size: 38px;
   }
 

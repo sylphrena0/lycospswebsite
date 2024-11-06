@@ -1,10 +1,10 @@
-#campusmap{
+#campus-map {
     margin: auto;
     margin-bottom: 2em;
     width: 100%;
 }
 
-.darkdiv{
+.darkdiv {
     background: #181a1b;
     padding: 1rem 0;
 }
@@ -17,6 +17,6 @@ span {
     margin-bottom: 55px;
 }
 
-#top-span{
+#top-span {
     display: inline-block;
 }

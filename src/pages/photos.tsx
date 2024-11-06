@@ -8,13 +8,13 @@ import Stars from '../sections/Stars';
 export const Head = () => <title>Lycoming SPS - Photos</title>;
 
 export default function Colloquium() {
-    return (
-      <>
-        <Navbar/>
-        <Stars />
-        <Photos />
-        <Footer />
-      </>
-    );
-  }
-  
+  return (
+    <>
+      <Navbar />
+      <Stars />
+      <Photos />
+      <Footer />
+    </>
+  );
+}
+
