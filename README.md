@@ -140,4 +140,4 @@ This project used templates as a starting point of some pages. It also uses vari
 
 The Home Page and Footer was based off on [a template by Brian Codex](https://github.com/briancodex/react-website-v1). Note that the Executive Board Cards were ported from the previous version of this website and the original source is unknown, though they were modified and adapted for react.
 
-The Contact Page was adapted from [this template](https://colorlib.com/wp/template/colorlib-regform-23/) and will be replaced with a more mobile friendly option, time permitting. The Sigma Pi Sigma, Colloquium, Photos, and History pages were written by [Sylphrena Kleinsasser](https://github.com/sylphrena0), some of which use external libraries and embeds.
+ The Sigma Pi Sigma, Colloquium, Photos, Contact, and History pages were written by [Sylphrena Kleinsasser](https://github.com/sylphrena0), some of which use external libraries and embeds.
