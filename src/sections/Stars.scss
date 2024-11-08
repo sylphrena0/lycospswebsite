@@ -1,15 +1,14 @@
 @use "sass:math";
 @use "sass:string";
 
-//n is number of stars required
+// n is number of stars required
 @function generate-box-shadows($n) {
-  //adjust stars width and height:
-  $width: 2300;
-  $height: 7000;
-  $value: "#{math.random($width)}px #{math.random($height)}px #FFF";
+  // stars are distributed evenly across the viewport width, but the height is not based on viewport as we want the stars to cover the entire div
+  $value: "#{math.div(math.random(10000), 100)}vw #{math.random(7000)}px #FFF";
 
   @for $i from 2 through $n {
-    $value: "#{$value} , #{math.random($width)}px #{math.random($height)}px #FFF";
+    // consider switching to dynamically scale N based on viewport width so density is consistent
+    $value: "#{$value} , #{math.div(math.random(10000), 100)}vw #{math.random(7000)}px #FFF";
   }
 
   @return string.unquote($value);
