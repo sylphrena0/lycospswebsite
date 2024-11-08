@@ -138,6 +138,6 @@ Section will be added at a later point.
 
 This project used templates as a starting point of some pages. It also uses various services and libraries which will not be noted here, as they are meant for reuse and mentioned in the project overview. 
 
-The Home Page and Footer was based off on [a template by Brian Codex](https://github.com/briancodex/react-website-v1). Note that the Executive Board Cards were ported from the previous version of this website and the original source is unknown, though they were modified and adapted for react.
+The Home Page and Footer was based off on [a template by Brian Codex](https://github.com/briancodex/react-website-v1). The [starry background](src/sections/Stars.scss) is based on [this SASS codepen](https://codepen.io/sarazond/pen/LYGbwj). Note that the Executive Board Cards were ported from the previous version of this website and the original source is unknown, though they were modified and adapted for react.
 
- The Sigma Pi Sigma, Colloquium, Photos, Contact, and History pages were written by [Sylphrena Kleinsasser](https://github.com/sylphrena0), some of which use external libraries and embeds.
+The Sigma Pi Sigma, Colloquium, Photos, Contact, and History pages were written by [Sylphrena Kleinsasser](https://github.com/sylphrena0), some of which use external libraries and embeds.
