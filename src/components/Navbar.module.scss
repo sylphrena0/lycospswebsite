@@ -1,0 +1,142 @@
+// Variables
+$navbar-height: 80px;
+$mobile-item-height: 60px;
+$navbar-bg: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+$mobile-breakpoint: 1250px;
+$secondary-color: #f66947; // TODO: should set this globally
+
+// Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Navbar styles
+#navbar {
+  background: $navbar-bg;
+  height: $navbar-height;
+  @include flex-center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  &_container {
+    @include flex-center;
+    height: $navbar-height;
+    max-width: 1500px;
+  }
+
+  &_title {
+    height: $navbar-height;
+    color: white;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    white-space: nowrap;
+  }
+
+  &_logo {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+  }
+}
+
+#nav {
+  &_menu {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    margin-right: 2rem;
+  }
+}
+
+.nav_link {
+  color: white;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+
+  &:hover {
+    transition: all 0.2s ease-out;
+  }
+
+  &-mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $mobile-breakpoint) {
+  #menu_icon {
+    // hide hamburger menu on desktop
+    display: none !important;
+  }
+
+  .nav_item {
+    height: $navbar-height;
+  }
+
+  .nav_link:hover {
+    color: $secondary-color;
+    border-bottom: 4px solid $secondary-color;
+  }
+}
+
+@media screen and (max-width: ($mobile-breakpoint - 1)) {
+  .nav_item {
+    height: $mobile-item-height;
+  }
+
+  #nav_menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: $navbar-height;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+
+    &.active {
+      background: #242222;
+      left: 0;
+      opacity: 1;
+      z-index: 1;
+    }
+  }
+
+  .nav_link {
+    @include flex-center;
+    text-align: center;
+    width: 100%;
+
+    &:hover {
+      background-color: white;
+      color: #242424;
+      border-radius: 0;
+    }
+  }
+
+  #menu_icon {
+    position: absolute !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    top: 0;
+    right: 0;
+    transform: translate(-60%, 30%);
+  }
+}

@@ -1,15 +1,16 @@
+import { IconButton } from '@mui/material';
 import { Link } from 'gatsby';
+import { Sling as Hamburger } from 'hamburger-react';
 import React, { Component } from 'react';
 import icon from '../images/icon.png';
-import './Navbar.css';
-
+import { active, menu_icon, nav_item, nav_link, nav_menu, navbar, navbar_container, navbar_logo, navbar_title } from './Navbar.module.scss';
 interface NavbarState {
   isOpen: boolean;
 }
 
 
 class Navbar extends Component<unknown, NavbarState> {
-  constructor(props) {
+  constructor(props: unknown) {
     super(props);
     this.navbarToggle = this.navbarToggle.bind(this);
     this.state = { isOpen: false };
@@ -21,61 +22,38 @@ class Navbar extends Component<unknown, NavbarState> {
 
 
   render() {
-    const state = this.state.isOpen ? 'active' : '';
-    const hamburgerClass = `hamburger ${state}`;
-    const navmenuClass = `nav-menu ${state}`;
+    const state = this.state.isOpen ? active : '';
     return (
 
-      <nav className='navbar'>
-        <div className='navbar-container'>
-          <Link to='/' className='navbar-logo'>
-            LYCO SPS
-            <img src={icon} alt="SPS Lycoming Logo" className="icon" />
+      <nav id={navbar}>
+        <div id={navbar_container}>
+          <Link to='/' id={navbar_title}>
+            LYCO SPS <img src={icon} alt="SPS Lycoming Logo" id={navbar_logo} />
           </Link>
-          <div className='menu-icon'>
-            <div className={hamburgerClass} onClick={this.navbarToggle} aria-label="Show Menu" aria-expanded={this.state.isOpen} role="button" tabIndex={0}>
-              <div id="a"></div><div id="b"></div><div id="c"></div><div id="d"></div><div id="e"></div><div id="f"></div>
-            </div>
-
-          </div>
-          <ul className={navmenuClass}>
-            <li className='nav-item'>
-              <Link to='/' className='nav-links'>
-                Home
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link to='/history' className='nav-links'>
-                History
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link to='/photos' className='nav-links'>
-                Photos
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link to='/colloquium' className='nav-links'>
-                Colloquium
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link to='/sigmapisigma' className='nav-links'>
-                ΣΠΣ Members
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link to='/contact' className='nav-links'>
-                Contact Us
-              </Link>
-            </li>
-
+          <IconButton onClick={this.navbarToggle} aria-label="Show Menu" aria-expanded={this.state.isOpen} id={menu_icon} tabIndex={0}>
+            <Hamburger />
+          </IconButton>
+          <ul id={nav_menu} className={state}>
+            <NavLink page='/' name='Home' />
+            <NavLink page='/history' name='History' />
+            <NavLink page='/photos' name='Photos' />
+            <NavLink page='/colloquium' name='Colloquium' />
+            <NavLink page='/sigmapisigma' name='ΣΠΣ Members' />
+            <NavLink page='/contact' name='Contact Us' />
           </ul>
         </div>
       </nav>
 
     );
   };
+};
+
+const NavLink: React.FC<{ page: string, name: string }> = ({ page, name }) => {
+  return (
+    <li className={nav_item}>
+      <Link to={page} className={nav_link}>{name}</Link>
+    </li>
+  );
 };
 
 export default Navbar;

@@ -18,10 +18,10 @@
     "@emailjs/browser": "^4.4.1",
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
+    "@fontsource/permanent-marker": "^5.1.0",
     "@mdx-js/react": "^3.1.0",
     "@mui/icons-material": "^6.1.6",
     "@mui/material": "^6.1.6",
-    "@fontsource/permanent-marker": "^5.1.0",
     "@mui/x-data-grid": "^7.22.1",
     "classnames": "^2.5.1",
     "gatsby": "^5.13.7",
@@ -52,6 +52,8 @@
     "eslint-plugin-react": "^7.37.2",
     "eslint-webpack-plugin": "^4.2.0",
     "gatsby-plugin-eslint": "^4.0.4",
-    "typescript": "^5.6.3"
+    "hamburger-react": "^2.5.1",
+    "typescript": "^5.6.3",
+    "typescript-plugin-css-modules": "^5.1.0"
   }
 }

@@ -6,6 +6,8 @@
   },
   "cSpell.words": [
     "fontsource",
+    "LYCO",
     "papaparse"
   ],
+  "typescript.tsdk": "node_modules\\typescript\\lib",
 }
