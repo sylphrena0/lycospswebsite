@@ -1,0 +1,59 @@
+$profile_width: 300px;
+$profile_margin: 18px;
+$max_profile_size: 4 * ($profile_width + (2 * $profile_margin));
+
+.exec_board_parent {
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  padding: 4% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.exec_board {
+  max-width: calc(8% + $max_profile_size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  * {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    color: #fff;
+  }
+}
+
+.profile {
+  margin: $profile_margin;
+  background-color: rgba(24, 26, 27, 0.75);
+  color: white;
+  overflow: hidden;
+  border-radius: 0.75em;
+  float: left;
+  width: $profile_width;
+  padding-top: 2rem;
+}
+
+.profile img {
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  width: 12rem;
+  height: 12rem;
+  padding: 0.9375rem;
+  padding-top: 1.5rem;
+  max-width: 100%;
+}
+
+.profile .profile_bio {
+  padding: 1rem;
+  text-align: center;
+}
+
+.profile_bio:first-child {
+  font-size: 1.5625rem;
+}
+
+.profile_bio p {
+  font-size: 16px;
+}
