@@ -1,11 +1,11 @@
+import { Link } from 'gatsby';
 import React from 'react';
-import './AboutUs.css';
-import CardItem from '../components/CardItem';
-import zone from '../images/zone.jpg';
-import sigmapisigma from '../images/sigmapisigma.jpg';
-import physcon from '../images/physcon.jpg';
 import fishdam from '../images/fishdam.jpg';
+import physcon from '../images/physcon.jpg';
 import picnic from '../images/picnic.jpg';
+import sigmapisigma from '../images/sigmapisigma.jpg';
+import zone from '../images/zone.jpg';
+import './AboutUs.css';
 
 function Cards() {
   return (
@@ -50,6 +50,32 @@ function Cards() {
         </div>
       </div>
     </div>
+  );
+}
+
+interface CardItemProps {
+  path: string;
+  label: string;
+  src: string;
+  text: string;
+}
+
+function CardItem({ path, label, src, text }: Readonly<CardItemProps>): JSX.Element {
+  return (
+    <li className='cards__item'>
+      <Link className='cards__item__link' to={path}>
+        <figure className='cards__item__pic-wrap' data-category={label}>
+          <img
+            className='cards__item__img'
+            alt='About Us'
+            src={src}
+          />
+        </figure>
+        <div className='cards__item__info'>
+          <h5 className='cards__item__text'>{text}</h5>
+        </div>
+      </Link>
+    </li>
   );
 }
 
