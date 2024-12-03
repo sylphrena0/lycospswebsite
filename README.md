@@ -19,16 +19,13 @@ To update the content on the drive, login with the credentials provided by the p
 
 ## **Development Instructions:**
 
-NOTE: These instructions assume you are using Linux (if you can, you should) or iOS. You can use Windows, you'll just need to use another package manager, like [nodist](https://github.com/nullivex/nodist) or [nvm-windows](https://github.com/coreybutler/nvm-windows).
 
 1.  **Install Dependencies**
 
-    Open a terminal window. Run the following code to install required packages:
+    - Open a terminal window and install npm with `apt install npm` (or use your distro's package manager). If you are on Windows, run the [Node.js installer](https://nodejs.org/en/download/) instead. 
+    
+    - Next, in your terminal, install yarn and gatsby-cli with `npm install -g yarn gatsby-cli`. This will allow you to manage packages with yarn and run gatsby commands anywhere on your device.
 
-    ```bash
-    sudo apt install npm
-    sudo npm install -g yarn gatsby-cli
-    ```
 1. **Clone Repository**
     
     Run these commands, which insert your information into the git config:
