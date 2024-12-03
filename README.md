@@ -26,11 +26,8 @@ NOTE: These instructions assume you are using Linux (if you can, you should) or 
     Open a terminal window. Run the following code to install required packages:
 
     ```bash
-    sudo su
-    apt install git curl
-    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
-    npm install -g yarn
-    yarn add -D gatsby-cli
+    sudo apt install npm
+    sudo npm install -g yarn gatsby-cli
     ```
 1. **Clone Repository**
     
