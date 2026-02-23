@@ -3,3 +3,4 @@ node_modules/
 public
 google-sheets-worker-credentials.json
 tsconfig.tsbuildinfo
+install-state.gz
