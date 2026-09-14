@@ -1,3 +1,5 @@
+> ⚠️ Due to [the death of Gatsby.js](https://github.com/gatsbyjs/gatsby/discussions/39062), this project cannot be updated to resolve open CVEs without a framework migration, which I will leave to the current board of Lycoming College SPS. Cheers!
+
 <p align="center">
   <a href="http://lycostu.lycoming.edu/orgs/sps/">
     <img alt="Lyco SPS" src="src/images/spslogo.svg" width="150" />
